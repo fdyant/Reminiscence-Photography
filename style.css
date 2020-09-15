@@ -1,87 +1,190 @@
-html body{
+*{
+    box-sizing: border-box;
+}
+
+body{
     margin: 0;
     padding: 0;
-    background-color: rgba(26, 26, 19, 0.863);
-    overflow: hidden;
-    font-family: 'Courgette', cursive;
+    background-image: url('https://images.pexels.com/photos/1210276/pexels-photo-1210276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-size: cover;
+    overflow-x: hidden;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18px;
 }
 
-#myVideo{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
-    opacity:0.30;
-}
-  
 /*header*/
-.flex-container {
-   flex-direction: column;
+header{
+    margin-top: 10px;
 }
+header p{
+        position: relative;
+        font-family: 'Berkshire Swash', cursive;
+        text-transform: uppercase;
+        font-size: 2.5em;
+        letter-spacing: 4px;
+        text-align: center;
+        overflow: hidden;
+        background: linear-gradient(90deg, #000, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 7s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+    }
+    @keyframes animate {
+        0% {
+        background-position: -500%;
+        }
+        100% {
+        background-position: 500%;
+        }
+    }
 
-.flex-container p{
-    font-size: 35px;
-    font-family: 'Courgette', cursive;
-    font-weight: 500;
-    color: beige;
-    text-align: center;
-    text-shadow: 2px 2px rgb(214, 84, 84);
-    float: left;
-    margin-left: 10%;
-    margin-top: 50px;
-}
 
-.flex-container img{
-    width:150px;
-    margin-left: 15%;
+.flex-container{
+    display:inline-flex;
+    line-height: 40px;
+    float: right;
 }
 .flex-container a{
     font-size: 18px;
-    font-family: 'Courgette', cursive;
     text-decoration: none;
-    border: none;
-    color: rgb(243, 243, 224);
-    padding: 15px 15px;
+    color: rgb(250, 250, 245);
+    padding: 15px 15px 15px;
     text-align: center;
 }
-
-.navbar span{
+.nav span{
     padding: 5px 5px 5px;
 }
 
-.navbar{
-    float: right;
-    margin-top: 50px;
-    margin-right: 2%;
+nav a:hover{
+    background-color: #570434;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(114, 88, 88);
 }
 
-/* content */
 
+/*mission section*/
 .mission{
-    margin-top: 8%;
-    text-align: center;
-    opacity: 50%;
-    width: 100%;
-    font-family: 'Courgette', cursive;
+    margin-top:80px;
+    background-color: #8a3659;
+    opacity: .70;
+    font-family: 'Berkshire Swash', cursive;
     color: antiquewhite;
-    font-weight: 900;
+}
+.mission h2, h1{
+    text-align: center;
+    
 }
 
-.content{
-    margin-top: 50px;
+/* pictures section */
+.container{
+    margin-top: 5%;
+    width:1800;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    position: relative;
+    width:300px;
+    height: 375px;
+    transition: 0.3s ease-out;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.7);
 }
 
-.content img{
-    width:313px;
-    height: 300px;
-    border:2px solid whitesmoke;
-    align-items: stretch;
+.card .card-box{
+    display:block;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    padding-right: 20px;
+}
+.card .card-box img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:80%;
+    display: inline-block;
+    transition: 0.5s;
+}
+.card .title{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    padding:12px;
+    background: #5e3848;
+    transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, .1.4);
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.card:hover 
+.title{
+    width: 100%;
+    height: 50%;
+    left: 0;
+    bottom:0;
+    text-decoration: none;
+}
+.title p{
+    margin: 10px 0 0;
+    padding:1em 1em;
+    transform: translateY(2em);
+    line-height: 1.3em;
+    transition: 0.3s;
+    text-align: justify;
+    text-decoration: none;
+    opacity: 0;
+}
+.card:hover .title p{
+    transform: translateY(0);
+    opacity: 1;
+}
+.title h2{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: antiquewhite;
+    text-decoration: none;
+}
+.title p{
+    text-align: center;
+    font-family: 'Berkshire Swash', cursive;
+    color: antiquewhite;
+}
+.card:hover {
+    box-shadow: 0 0 5em rgb(105, 24, 24);
+}
+.title button{
+    padding: 5px 10px 5px;
+    cursor: pointer;
+    border-radius:10px;
+    background: rgb(49, 7, 28);
+    transition: all 0.5s ease;
+    border: #000 1px solid;
+    margin-left:35%;
+}
+.title button a{
+    text-decoration:none;
+    text-align: center;
+    color:floralwhite;
+    font-size:12px;
+}
+.title a:hover{
+    background-color: #570434;
+    transition: all 0.3s ease;
 }
 
-.footer{
+
+
+footer{
     font-size: 12px;
-    margin-top:20px;
+    margin-top:50px;
     text-align: center;
     color: antiquewhite;
 }
