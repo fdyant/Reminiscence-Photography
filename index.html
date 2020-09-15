@@ -8,18 +8,14 @@
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="style.css" type="text/css">
-
-            <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
             <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         </head>
 <body>
   
 <!--header-->
-
-<header>
-  <p>Reminiscence Photography</p>
-</header>
+<div class="home">
 
 <div class="flex-container">
       <nav>
@@ -30,12 +26,14 @@
       </nav>
 </div>       
 
+<header>
+  <p>Reminiscence Photography</p>
+</header>
 <!--main content-->
 
-<div class="mission">
+<div class="mission" >
   <h1>Our Mission</h1>
   <h2>Capture Life, Beauty, Love </h2>
-</div>
 </div>
 
 <!---pictures section-->
@@ -75,13 +73,34 @@
     </div>
   </div>
 </div>
+</div>
+</div>
+
+<!--about section-->
+<div class="home">
+
+<div id="about">
+  <div class="box-about">
+    <div class="container-about">
+      <h3>Journey</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim. At soluta voluptatibus eaque facere non ipsam atque nobis dolores, et veritatis? Ratione, culpa? Cumque numquam beatae ducimus reiciendis ratione.
+  </p>
+</div>
+</div>
 
 
+<!----footer-->
 <footer>
   <p>Copyright@2020&#128151</p>
 </footer>
 
 <script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 400,
+        duration: 800
+    });
 </script>
 
 
