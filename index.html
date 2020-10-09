@@ -4,103 +4,137 @@
         <head>
             <meta charset="utf-8">
             <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <title>Reminiscence</title>
+            <title>Welcome to Reminiscence</title>
             <meta name="description" content="">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <link rel="stylesheet" href="style.css" type="text/css">
-            <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-            <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&display=swap" rel="stylesheet">
-            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        </head>
+            <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Bebas+Neue&family=Merriweather&family=Montez&family=Pinyon+Script&family=Rouge+Script&family=Ruthie&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/325d85b0bb.js" crossorigin="anonymous"></script>
+          </head>
 <body>
+
+  <!-- 1st page section-->
   
-<!--header-->
-<div class="home">
-
-<div class="flex-container">
-      <nav>
-      <span><a href="#home">HOME</a></span>
-      <span><a href="#about">ABOUT</a></span> 
-      <span><a href="#gallery">GALLERIES</a></span>
-      <span><a href="#contact">CONTACT</a></span>
-      </nav>
-</div>       
-
-<header>
-  <p>Reminiscence Photography</p>
+<div class ="menu-wrap">
+  <h5>The Menu </h5>
+  <input type="checkbox" class="toggle">
+<div class="burger"> <div></div></div>
+  <div class="menu">
+<div>
+<div>
+    <ul>
+      <li><a href="index.html">WELCOME</a></li>
+      <li><a href="#about">ABOUT</a></li> 
+      <li><a href="#portfolio">PORTFOLIOS</a></li> 
+      <li><a href="#contact">CONTACT</a></li> 
+    </ul>
+  </div>
+</div>
+</div>
+</div>
+<header class="showcase">
+  <div class="container showcase-inner">
+    <h1>Reminiscence</h1>
+    <h2>Photography</h2>
+    <a href="#gallery" class="btn">See Gallery</a>
+  </div>
+  
 </header>
-<!--main content-->
+<!--gallery section-->
 
-<div class="mission" >
-  <h1>Our Mission</h1>
-  <h2>Capture Life, Beauty, Love </h2>
+<div class ="slider" id="gallery">
+  <div class="slide current">
+  </div>
+  <div class="slide">
+  </div>
+  <div class="slide">
+  </div>
+  <div class="slide">
+  </div>
+  <div class="slide">
+  </div>
+  <div class="slide">
+  </div>
+  <div class="slide">
+  </div>
+<div class="buttons">
+  <button id="prev"><i class="fas fa-angle-left"></i></button>
+  <button id="next"><i class="fas fa-angle-right"></i></button>
 </div>
 
-<!---pictures section-->
+</div>
+<!--About section-->
+<div id ="about" class="about">
+
+  <div class="about-me">
+    <h2>Hey there, I'm Ita! </h2>
+    <img src="resources/Ita.jpg" alt="ita-pic"/>
+  </div>
+
+  <div class= "intro">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores ducimus culpa labore nulla officia optio nobis, id adipisci fugiat neque praesentium qui illo laudantium nesciunt cumque doloremque quibusdam facilis?</p>
+    <br><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae ipsum soluta reiciendis aliquid eaque recusandae, quidem eligendi facilis. Ipsa magnam nam quia vel perferendis tempore excepturi explicabo deserunt perspiciatis inventore?</p>
+    </div>
+</div>
+
+<!--portfolio section-->
+<div id="portfolio" class="portfolio">
+  <h2>Capture of Life, Beauty & Love</h2>
   
-<div class="container">
+  <div class ="card-portfolio">
+  <div class="card">
+    <a target="_blank" href="resources/Ashley-colage-1.jpg">
+      <img src="resources/Ashley-colage-1.jpg">
+    </a>
+    <div class="desc">Wedding sessions</div>
+  </div>  
+
+<div class="card">
+    <a target="_blank" href="resources/mom-col1.jpg">
+      <img src="resources/mom-col1.jpg">
+    </a>
+    <div class="desc">Motherhood moment</div>
+  </div>  
 
   <div class="card">
-    <div class="card-box">
-    <img src="resources/Ashley-41.jpg">
-    </div>
-      <div class="title">
-        <h2>Wedding</h2>
-      <p>Fabulous Wedding Moments</p>
-      <button><a href="#">View Gallery</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-box">
-    <img src="resources/rainbowbelly.jpg">
-    </div>
-      <div class="title">
-        <h2>Mom To Be</h2>
-      <p>Strong and Beauty</p>
-      <button><a href="#">View Gallery</button>
-    </div>
-  </div>
-
-  <div class="card">
-    <div class="card-box">
-    <img src="resources/Dad-kids.jpg">
-    </div>
-      <div class="title">
-      <h2>Family Pictures</h2>
-      <p>Beautiful Families</p>
-      <button><a href="#">View Gallery</button>
-    </div>
+    <a target="_blank" href="resources/family-cara-col1.jpg">
+      <img src="resources/family-cara-col1.jpg">
+    </a>
+    <div class="desc">Family fun</div>
+</div>
   </div>
 </div>
+
+<!--contact-->
+
+<div id="contact" class="contact">
+  <h4>@REMINISCENCE ON INSTAGRAM</h4>
+
+<div class="media">
+  <div class="media-box">
+    <img src="resources/Baby-Sabrina-10.jpg">
+  </div>
+  <div class="media-box">
+    <img src="resources/White dress-8.jpg">
+  </div>
+  <div class="media-box">
+    <img src="resources/family.jpg">
+  </div>
+  <div class="media-box">
+    <img src="resources/Ashley-23.jpg">
 </div>
 </div>
+  <div class="contact-info">
+    <p><i class="fas fa-phone-alt"></i> 123-456-7890</p>
+    <p><i class="fas fa-envelope"></i></i>reminiscence@email.com</p>
+    <p><i class="fas fa-globe-americas"></i>Serving Florida</p>
+  </div>
 
-<!--about section-->
-
-
-<div id="about">
-  <div class="box-about">
-    <div class="container-about">
-      <h3>Journey</h3>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum, enim. At soluta voluptatibus eaque facere non ipsam atque nobis dolores, et veritatis? Ratione, culpa? Cumque numquam beatae ducimus reiciendis ratione.
-  </p>
-</div>
 </div>
 
-
-<!----footer-->
-<footer>
-  <p>Copyright@2020&#128151</p>
-</footer>
-
-<script
-  src="https://unpkg.com/aos@next/dist/aos.js">
-    AOS.init({
-        offset: 400,
-        duration: 800
-    });
-</script>
+<script src="main.js"></script>
+  
 
 
 </body>
